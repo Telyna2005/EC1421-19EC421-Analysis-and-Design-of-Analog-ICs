@@ -1,30 +1,63 @@
 # EC1421-19EC421-Analysis-and-Design-of-Analog-ICs
-# Simulation of Instrumentation Amplifier
+#  INSTRUMENTATION AMPLIFIER
 
-## AIM:
+## AIM: 
 
- To Design and simulate the Instrumentation amplifier circuit using LT-Spice.
+To construct and test the CMRR of an instrumentation amplifier using op-amp  
+IC741.
  
-## SOFTWARE REQUIRED:
-LT-Spice
+## APPARATUS REQUIRED
 
-## PROCEDURE:
-1. Double click on LT-Spice icon. 
-2. New schematic window open. 
-3. Pick and paste the required component from the library and draw the circuit diagram . 
-4. Complete the connection. 
-5. Save the file by giving file name. 
-6. Click on the run option ->click advanced open ->select Ac analysis->enter the amplitude 
-time delay stop time value. 
-7. Click on the run option ->simulation window opens->place the probe ->output graph is 
-obtained.
-
-## CIRCUIT DIAGRAM:
+<img width="634" height="166" alt="image" src="https://github.com/user-attachments/assets/e7f51b72-b143-4728-9c65-6b9d447201cf" />
 
 
+## THEORY
+## INSTRUMENTATION AMPLIFIER
 
-## OUTPUT GRAPH:
+An instrumentation amplifier is the intermediate stage of a instrumentation system. The 
+signal source of the instrumentation amplifier is the output of the transducer. Many 
+transducers output do not have the ability or sufficient strength to drive the next following 
+stages. Therefore, instrumentation amplifiers are used to amplify the low-level output signal of 
+the transducer so that it can drive the following stages such as indicator or displays. 
+ 
+The major requirements of a instrumentation amplifier are precise, low-level 
+signal amplification where low-noise, low thermal and time drifts, high input resistance & 
+accurate closed-loop gain, low power consumption, high CMRR & high slew rate for superior 
+performance. 
+ 
+ The output of Instumentation amplifier is given by 
+                                                         
+Vo = RF/R1[1+ 2R’/R][V2-V1] 
+## CIRCUIT DIAGRAM: 
+![WhatsApp Image 2025-12-04 at 08 59 26_ebe93805](https://github.com/user-attachments/assets/df7e2b53-3b4c-4c10-bfdb-4cd97151eae9)
+
+## MODEL GRAPH:
+![WhatsApp Image 2025-12-04 at 08 59 25_a7680eab](https://github.com/user-attachments/assets/862c7bd8-88dc-4db7-a036-63308664fcb8)
+
+## PROCEDURE:  
+1. Select the entire resistor with the same value. Let R be the gain varying resistor with 
+different values of resistance for simplicity let R be a constant value. 
+2. Connect the circuit as shown in the circuit diagram.  
+3. + Vcc and - Vcc supply is given to the power supply terminal of the Op-Amp IC. 
+4. Give the input V1 and V2 to the non-inverting terminals of first & second op-amp 
+respectively.  
+5. By varying the value of RG, measure the output voltage for common mode and 
+differential mode operation. Since RG is selected as constant value, provide different 
+input value of V1 and V2. 
+6. Check the theoretical value with the experimental value. 
+7. The output voltage is obtained in the Multimeter and the input and output voltage 
+waveforms are plotted in a graph sheet.
+
+## TABULATION:
+![WhatsApp Image 2025-12-04 at 08 59 26_803b8448](https://github.com/user-attachments/assets/f68aa476-352b-4892-961c-3cfb5a3ab668)
+
+## CALCULATIONS:
+![WhatsApp Image 2025-12-04 at 08 59 25_4088c823](https://github.com/user-attachments/assets/c097ae0b-377e-46fa-bf7e-2aa08dbd9631)
+
+## GRAPH:
+![WhatsApp Image 2025-12-04 at 08 59 25_cd39b467](https://github.com/user-attachments/assets/52788d2f-deeb-4bdc-96a9-5e6c0ed3eeb7)
 
 
-## RESULT:
-Thus the LT-SPICE tool has been studied and Instrumentation amplifier circuit is simulated. 
+ ## RESULTS:
+ Thus an instrumentation amplifier was constructed and  tested using op
+amp IC 741.
